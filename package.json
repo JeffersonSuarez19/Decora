@@ -1,0 +1,29 @@
+{
+  "name": "decora-store-vue",
+  "version": "1.0.0",
+  "description": "A Vue 3.js online store project showcasing a gallery and appliances.",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^3.0.4",
+    "vue": "^3.2.0",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "vite": "^7.3.1"
+  },
+  "keywords": [
+    "vue",
+    "vite",
+    "store",
+    "gallery",
+    "appliances"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
