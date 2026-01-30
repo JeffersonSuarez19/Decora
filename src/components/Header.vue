@@ -151,12 +151,24 @@ const onSearch = () => {
 }
 
 .cat-btn {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
-  padding: 0.45rem 0.6rem;
+  background: transparent; /* Fondo transparente */
+  border: none;
+  color: #6A0D1E; /* COLOR VINOTINTO */
+  padding: 0.45rem 0.8rem;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 700; /* Un poco más negrita para que destaque */
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.cat-btn:hover {
+  background-color: rgba(106, 13, 30, 0.08); /* Fondo vinotinto muy clarito */
+  transform: translateY(-1px);
+}
+
+.cart-btn:hover {
+  background-color: rgba(106, 13, 30, 0.2); /* Un poco más oscuro al pasar el mouse */
 }
 
 .cart-btn {
