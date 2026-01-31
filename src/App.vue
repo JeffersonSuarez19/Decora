@@ -26,5 +26,7 @@ import Footer from '@/components/Footer.vue'
   z-index: -1;
   opacity: 0.15; /* Lo hace más sutil */
   pointer-events: none; /* Evita que interfiera con clics */
+  
 }
+
 </style>

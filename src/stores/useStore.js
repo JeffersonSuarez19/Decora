@@ -8,6 +8,9 @@ import picasso from '@/assets/gallery/picasso.jpeg'
 import verona from '@/assets/gallery/verona.jpeg'
 import aleman from '@/assets/gallery/aleman.jpeg'
 import clickclack from '@/assets/gallery/clickclack.jpeg'
+import baseMarmolizada from '@/assets/gallery/baseMarmolizada.jpeg'
+import comedorCharlotte from '@/assets/gallery/comedorCharlotte.jpeg'
+import comedorGalex6p from '@/assets/gallery/comedorGalex6p.jpeg'
 
 import nevera from '@/assets/appliances/nevera.webp'
 import lavadora from '@/assets/appliances/lavadora.webp'
@@ -66,6 +69,31 @@ export const useStore = defineStore('main', {
                 image: clickclack,
                 specs: ['Tela altifluidos y antirasguños', 'Puff adicional', 'Estructura en cedro', '1 año de garantía']
             },
+                 {
+                id: 7,
+                name: 'Base Marmolizada',
+                category: 'gallery',
+                price: 2840000,
+                image: baseMarmolizada,
+                specs: ['Base Marmolizada', 'Sillas pétalos', '1 año de garantía']
+            },
+                {
+                id: 8,
+                name: 'Comedor Charlotte',
+                category: 'gallery',
+                price: 2840000,
+                image: comedorCharlotte,
+                specs: ['Comedor Charlotte', '', '1 año de garantía']
+            },
+                {
+                id: 7,
+                name: 'Comedor Galex 6 Puestos',
+                category: 'gallery',
+                price: 2840000,
+                image: comedorGalex6p,
+                specs: ['Comedor Galex 6 Puestos', '', '1 año de garantía']
+            },
+            
             
 
 
