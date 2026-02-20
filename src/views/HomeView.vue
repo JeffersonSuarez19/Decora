@@ -41,8 +41,16 @@ import ProductCard from '@/components/ProductCard.vue'
 const router = useRouter()
 const store = useStore()
 
-const featured = computed(() => store.products.slice(0, 6))
-const appliances = computed(() => store.productsByCategory('appliances').slice(0, 5))
+const featured = computed(() =>
+  [...store.productsByCategory('gallery')]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .slice(0, 6)
+)
+const appliances = computed(() =>
+  [...store.productsByCategory('appliances')]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .slice(0, 5)
+)
 
 const goCategory = (cat) => router.push(`/${cat}`)
 const addToCart = (p) => store.addToCart(p)

@@ -126,13 +126,20 @@ const store = useStore()
 const isCart = computed(() => route.name === 'cart')
 
 const items = computed(() => {
-  if (isCart.value) return store.cartItems
-  const id = Number(route.query.id)
-  if (id) {
-    const p = store.products.find(x => x.id === id)
-    return p ? [p] : []
+  let productItems = []
+  if (isCart.value) {
+    // Creamos una copia para no mutar el estado original del store al ordenar
+    productItems = [...store.cartItems]
+  } else {
+    const id = Number(route.query.id)
+    if (id) {
+      const p = store.products.find(x => x.id === id)
+      productItems = p ? [p] : []
+    }
   }
-  return []
+
+  // Ordenamos los productos alfabéticamente por nombre
+  return productItems.sort((a, b) => a.name.localeCompare(b.name))
 })
 
 const total = computed(() => items.value.reduce((s, p) => s + (p.price || 0), 0))
